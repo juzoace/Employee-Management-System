@@ -1,8 +1,15 @@
 const router = require('express').Router();
 const { createEmployee, updateEmployee, getEmployees, deleteEmployee} = require("../controller/employee");
 
+
+// Swagger Definitions
+
 // Create Employee
-// Swagger Definition
+/**
+ * @
+ * 
+ * 
+ */
 router.post('/createEmployee', createEmployee);
 
 // Update Employee

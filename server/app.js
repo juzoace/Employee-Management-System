@@ -1,6 +1,5 @@
 const express = require("express");
 const mongoose = require('mongoose');
-// const passport = require('passport');
 const path = require('path');
 const app = express();
 const cors = require('cors');
@@ -24,9 +23,6 @@ mongoose.connect(DB, { useNewUrlParser: true }).then(() => {
 }).catch(err => { 
     console.log(`Unable to connect with the database ${err}`)
 });
-
-// Load the models
-require('./models/employee');
 
 
 // Json Body Middleware

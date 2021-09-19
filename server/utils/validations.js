@@ -6,7 +6,8 @@ const employeeValidationRules = (data) => {
         name: Joi.string().min(1).max(255).required(),
         email: Joi.string().min(6).max(255).required().email(),
         position: Joi.string().min(6).max(255).required(),
-        department: Joi.string().min(1).max(255).required(),  
+        department: Joi.string().min(1).max(255).required(), 
+        _id: Joi.string().min(1).max(255) 
     });
     return schema.validate(data);
 }

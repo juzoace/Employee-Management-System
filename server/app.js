@@ -40,6 +40,7 @@ app.use(require('./routes'));
 // Swagger Open Api Options Definition 
 const swaggerOptions = {
     swaggerDefinition: {
+      openapi: "3.0.0",
       info: {
         version: "1.0.0",
         title: "API",
